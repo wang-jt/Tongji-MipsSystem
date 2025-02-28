@@ -22,11 +22,11 @@
 
 - 游戏过程中
 
-![game1](figures\game1.jpg)
+![game1](figures/game1.jpg)
 
 - 游戏结束：
 
-  ![game2](figures\game2.jpg)
+  ![game2](figures/game2.jpg)
 
 
 
