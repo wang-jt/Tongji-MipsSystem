@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Jun  3 21:32:50 2023
+# Process ID: 21664
+# Current directory: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/impl_1
+# Command line: vivado.exe -log openmips_min_sopc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source openmips_min_sopc.tcl -notrace
+# Log file: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/impl_1/openmips_min_sopc.vdi
+# Journal file: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/impl_1\vivado.jou
+# Running On: LAPTOP-JNSJ8DCA, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16539 MB
+#-----------------------------------------------------------
+source openmips_min_sopc.tcl -notrace

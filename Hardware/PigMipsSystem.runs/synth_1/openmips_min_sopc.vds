@@ -1,0 +1,1387 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Jun  3 21:28:40 2023
+# Process ID: 19052
+# Current directory: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1
+# Command line: vivado.exe -log openmips_min_sopc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc.tcl
+# Log file: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/openmips_min_sopc.vds
+# Journal file: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1\vivado.jou
+# Running On: LAPTOP-JNSJ8DCA, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16539 MB
+#-----------------------------------------------------------
+source openmips_min_sopc.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/utils_1/imports/synth_1/openmips_min_sopc.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/utils_1/imports/synth_1/openmips_min_sopc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top openmips_min_sopc -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Designutils 20-5348] Reverting to default synthesis as last run was incremental and iterative incremental synthesis is disabled in this mode
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31360
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1284.344 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'openmips_min_sopc' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg8' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/seg8.v:10]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/seg8.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'seg8' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/seg8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'openmips' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/pc_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/pc_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/if_id.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/if_id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'id' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id.v:316]
+INFO: [Synth 8-6155] done synthesizing module 'id' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id_ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id_ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ex' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:252]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:278]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:349]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:374]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:398]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:444]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:470]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem_wb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem_wb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/hilo_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/hilo_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ctrl.v:23]
+WARNING: [Synth 8-7071] port 'inst_tlb_refill' of module 'ctrl' is unconnected for instance 'ctrl0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:605]
+WARNING: [Synth 8-7071] port 'inst_tlb_invalid' of module 'ctrl' is unconnected for instance 'ctrl0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:605]
+WARNING: [Synth 8-7071] port 'data_tlb_refill' of module 'ctrl' is unconnected for instance 'ctrl0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:605]
+WARNING: [Synth 8-7071] port 'data_tlb_invalid' of module 'ctrl' is unconnected for instance 'ctrl0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:605]
+WARNING: [Synth 8-7071] port 'data_tlb_modify' of module 'ctrl' is unconnected for instance 'ctrl0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:605]
+WARNING: [Synth 8-7023] instance 'ctrl0' of module 'ctrl' has 15 connections declared, but only 10 given [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:605]
+INFO: [Synth 8-6157] synthesizing module 'div' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LLbit_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/LLbit_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LLbit_reg' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/LLbit_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/cp0_reg.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/cp0_reg.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/cp0_reg.v:23]
+WARNING: [Synth 8-7071] port 'badvaddr' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'inst_tlb_refill' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'inst_tlb_invalid' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'data_tlb_refill' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'data_tlb_invalid' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'data_tlb_modify' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'wired_o' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7071] port 'badvaddr_o' of module 'cp0_reg' is unconnected for instance 'cp0_reg0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+WARNING: [Synth 8-7023] instance 'cp0_reg0' of module 'cp0_reg' has 39 connections declared, but only 31 given [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:645]
+INFO: [Synth 8-6157] synthesizing module 'tlb' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/tlb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tlb' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/tlb.v:3]
+WARNING: [Synth 8-7071] port 'inst_paddr' of module 'tlb' is unconnected for instance 'tlb0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:686]
+WARNING: [Synth 8-7071] port 'data_paddr' of module 'tlb' is unconnected for instance 'tlb0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:686]
+WARNING: [Synth 8-7023] instance 'tlb0' of module 'tlb' has 35 connections declared, but only 33 given [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:686]
+INFO: [Synth 8-6157] synthesizing module 'wishbone_bus_if' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/wishbone_bus_if.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wishbone_bus_if' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/wishbone_bus_if.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'openmips' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:24]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/gpio/gpio_top.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/gpio/gpio_top.v:115]
+INFO: [Synth 8-6157] synthesizing module 'flash_rom' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:145]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:402]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106168]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 10.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106168]
+INFO: [Synth 8-6157] synthesizing module 'rom0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/rom0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rom0' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/rom0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'flash_rom' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DDR2' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:27]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'Ram2Ddr' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/Ram2Ddr.vhd:63]
+INFO: [Synth 8-3491] module 'mig_7series_0' declared at 'D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/mig_7series_0_stub.v:5' bound to instance 'Inst_DDR' of component 'mig_7series_0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/Ram2Ddr.vhd:196]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-614] signal 'calib_complete' is read in the process but is not in the sensitivity list [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/Ram2Ddr.vhd:436]
+INFO: [Synth 8-256] done synthesizing module 'Ram2Ddr' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/Ram2Ddr.vhd:63]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'DDR2' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:27]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_top.v:140]
+INFO: [Synth 8-251] () UART INFO: Data bus width is 32. Debug Interface present.
+ [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_top.v:329]
+INFO: [Synth 8-251] () UART INFO: Doesn't have baudrate output
+ [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_top.v:334]
+INFO: [Synth 8-6157] synthesizing module 'uart_wb' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_wb.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wb' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_wb.v:142]
+INFO: [Synth 8-6157] synthesizing module 'uart_regs' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_regs.v:231]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_transmitter.v:154]
+INFO: [Synth 8-6157] synthesizing module 'uart_tfifo' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_tfifo.v:144]
+INFO: [Synth 8-6157] synthesizing module 'raminfr' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/raminfr.v:83]
+	Parameter addr_width bound to: 4 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter depth bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'raminfr' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/raminfr.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tfifo' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_tfifo.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_transmitter.v:154]
+INFO: [Synth 8-6157] synthesizing module 'uart_sync_flops' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_sync_flops.v:71]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'uart_sync_flops' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_sync_flops.v:71]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_receiver.v:198]
+INFO: [Synth 8-6157] synthesizing module 'uart_rfifo' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_rfifo.v:150]
+	Parameter fifo_width bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rfifo' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_rfifo.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_receiver.v:198]
+INFO: [Synth 8-6155] done synthesizing module 'uart_regs' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_regs.v:231]
+INFO: [Synth 8-6157] synthesizing module 'uart_debug_if' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_debug_if.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'uart_debug_if' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_debug_if.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_top.v:140]
+INFO: [Synth 8-6157] synthesizing module 'GraphicsController' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga1024x768' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/vga1024x768.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga1024x768' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/vga1024x768.v:23]
+WARNING: [Synth 8-7071] port 'o_blanking' of module 'vga1024x768' is unconnected for instance 'display' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:93]
+WARNING: [Synth 8-7071] port 'o_active' of module 'vga1024x768' is unconnected for instance 'display' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:93]
+WARNING: [Synth 8-7071] port 'o_screenend' of module 'vga1024x768' is unconnected for instance 'display' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:93]
+WARNING: [Synth 8-7071] port 'o_animate' of module 'vga1024x768' is unconnected for instance 'display' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:93]
+WARNING: [Synth 8-7023] instance 'display' of module 'vga1024x768' has 11 connections declared, but only 7 given [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:93]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'GraphicsController' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:23]
+WARNING: [Synth 8-689] width (26) of port connection 'wb_adr_i' does not match port width (17) of module 'GraphicsController' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:357]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard_driver' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/keyboard.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard_driver' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/keyboard.v:22]
+WARNING: [Synth 8-689] width (32) of port connection 'wb_adr_i' does not match port width (17) of module 'ps2_keyboard_driver' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:371]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_top' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:61]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_master_if' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:61]
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:442]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:586]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:610]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:634]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_master_if' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:61]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_slave_if' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:61]
+	Parameter pri_sel bound to: 2'b10 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter dw bound to: 32 - type: integer 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_arb' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_arb' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v:63]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_msel' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_msel.v:61]
+	Parameter pri_sel bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_pri_enc' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_pri_enc.v:61]
+	Parameter pri_sel bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_pri_dec' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_pri_dec.v:61]
+	Parameter pri_sel bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_pri_dec' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_pri_dec.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_pri_enc' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_pri_enc.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_msel' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_msel.v:61]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:296]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:310]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:324]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:352]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:392]
+INFO: [Synth 8-226] default block is never used [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:406]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_slave_if' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:61]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_rf' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_rf.v:61]
+	Parameter rf_addr bound to: 4'b1111 
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_rf' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_rf.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_top' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:61]
+WARNING: [Synth 8-7071] port 'm0_err_o' of module 'wb_conmax_top' is unconnected for instance 'wb_conmax_top0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:375]
+WARNING: [Synth 8-7071] port 'm0_rty_o' of module 'wb_conmax_top' is unconnected for instance 'wb_conmax_top0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:375]
+WARNING: [Synth 8-7071] port 'm1_err_o' of module 'wb_conmax_top' is unconnected for instance 'wb_conmax_top0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:375]
+WARNING: [Synth 8-7071] port 'm1_rty_o' of module 'wb_conmax_top' is unconnected for instance 'wb_conmax_top0' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:375]
+WARNING: [Synth 8-7023] instance 'wb_conmax_top0' of module 'wb_conmax_top' has 242 connections declared, but only 238 given [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'openmips_min_sopc' (0#1) [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:23]
+WARNING: [Synth 8-7137] Register clk_count_reg in module seg8 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/seg8.v:26]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/div.v:67]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/div.v:72]
+WARNING: [Synth 8-6014] Unused sequential element find_index2_r_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/tlb.v:333]
+WARNING: [Synth 8-3848] Net inst_paddr in module/entity tlb does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/tlb.v:15]
+WARNING: [Synth 8-3848] Net data_paddr in module/entity tlb does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/tlb.v:16]
+WARNING: [Synth 8-3848] Net tlb_entry_hi in module/entity openmips does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:245]
+WARNING: [Synth 8-3848] Net rom_ce_o in module/entity openmips does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:693]
+WARNING: [Synth 8-3848] Net inst_tlb_refillF in module/entity openmips does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/openmips.v:248]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:138]
+WARNING: [Synth 8-6014] Unused sequential element wait_count_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:140]
+WARNING: [Synth 8-6014] Unused sequential element hld_n_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:123]
+WARNING: [Synth 8-6014] Unused sequential element addr_req_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:420]
+WARNING: [Synth 8-6014] Unused sequential element ram_ub_int_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/Ram2Ddr.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element ram_lb_int_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/Ram2Ddr.vhd:251]
+WARNING: [Synth 8-7137] Register wait_count_reg in module DDR2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:229]
+WARNING: [Synth 8-7137] Register mem_a_reg in module DDR2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:89]
+WARNING: [Synth 8-7137] Register mem_dq_i_reg in module DDR2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:94]
+WARNING: [Synth 8-7137] Register wb_dat_o_reg in module DDR2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:272]
+WARNING: [Synth 8-3848] Net chipTemp in module/entity DDR2 does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/ddr/DDR2.v:115]
+WARNING: [Synth 8-6014] Unused sequential element rbit_in_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/uart/uart_receiver.v:280]
+WARNING: [Synth 8-6014] Unused sequential element lineBuffer_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:157]
+WARNING: [Synth 8-6014] Unused sequential element isDrawPoint_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:158]
+WARNING: [Synth 8-6014] Unused sequential element lineNowX_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:159]
+WARNING: [Synth 8-6014] Unused sequential element wordbuf_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:160]
+WARNING: [Synth 8-3848] Net inputDataOuputShowRamW in module/entity GraphicsController does not have driver. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:45]
+WARNING: [Synth 8-7137] Register int_r_reg in module ps2_keyboard_driver has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/keyboard.v:61]
+WARNING: [Synth 8-7137] Register ps2_byte_r_reg in module ps2_keyboard_driver has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/keyboard.v:202]
+WARNING: [Synth 8-7137] Register wb_dat_o_reg in module ps2_keyboard_driver has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/keyboard.v:203]
+WARNING: [Synth 8-6014] Unused sequential element s5_reg_data_o_reg was removed.  [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/openmips_min_sopc.v:178]
+WARNING: [Synth 8-3917] design openmips_min_sopc has port dtube_cs_n[7] driven by constant 1
+WARNING: [Synth 8-3917] design openmips_min_sopc has port dtube_cs_n[6] driven by constant 1
+WARNING: [Synth 8-3917] design openmips_min_sopc has port LED1 driven by constant 0
+WARNING: [Synth 8-3917] design openmips_min_sopc has port LED2 driven by constant 0
+WARNING: [Synth 8-7129] Port read in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_we_i in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[1] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[0] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[16] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[15] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[14] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[13] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[12] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[11] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[10] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[9] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[8] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[7] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[6] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[5] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[4] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[3] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[2] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[31] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[30] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[29] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[28] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[27] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[26] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[25] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[24] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[23] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[22] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[21] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[20] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[19] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[18] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[17] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[16] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[15] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[14] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[13] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[12] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[11] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[10] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[9] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[8] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[7] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[6] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[5] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[4] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[3] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[2] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[1] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[0] in module ps2_keyboard_driver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[1] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[0] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[16] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[15] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[14] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[13] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[31] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[30] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[29] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[28] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[27] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[26] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[25] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[24] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[23] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[22] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[21] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[20] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[19] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[18] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[17] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[16] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[15] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[14] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[13] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[12] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[11] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[10] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[9] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[8] in module GraphicsController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcr[7] in module uart_receiver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcr[6] in module uart_receiver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcr[7] in module uart_transmitter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_ub in module Ram2Ddr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_lb in module Ram2Ddr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_we_i in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[1] in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[0] in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[31] in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[30] in module flash_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dat_i[29] in module flash_rom is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1445.504 ; gain = 161.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1445.504 ; gain = 161.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1445.504 ; gain = 161.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.820 . Memory (MB): peak = 1445.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'DDR2/Ram/Inst_DDR'
+Finished Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'DDR2/Ram/Inst_DDR'
+Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'GraphicsController/showRam'
+Finished Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'GraphicsController/showRam'
+Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/rom0/rom0/rom0_in_context.xdc] for cell 'flash_rom/rom0'
+Finished Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/rom0/rom0/rom0_in_context.xdc] for cell 'flash_rom/rom0'
+Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'DDR2/clk_1'
+Finished Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'DDR2/clk_1'
+Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'GraphicsController/ascii'
+Finished Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/.Xil/Vivado-19052-LAPTOP-JNSJ8DCA/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'GraphicsController/ascii'
+Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/constrs_1/new/nexys4ddr.xdc]
+Finished Parsing XDC File [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/constrs_1/new/nexys4ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/constrs_1/new/nexys4ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/openmips_min_sopc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/openmips_min_sopc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1696.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1696.695 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'GraphicsController/ascii' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'GraphicsController/showRam' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'flash_rom/rom0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Designutils 20-5348] Reverting to default synthesis as last run was incremental and iterative incremental synthesis is disabled in this mode
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for DDR2/Ram/Inst_DDR. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for GraphicsController/showRam. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for flash_rom/rom0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDR2/clk_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for GraphicsController/ascii. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
+INFO: [Synth 8-802] inferred FSM for state register 'wishbone_state_reg' in module 'wishbone_bus_if'
+INFO: [Synth 8-802] inferred FSM for state register 'cState_reg' in module 'Ram2Ddr'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'DDR2'
+INFO: [Synth 8-802] inferred FSM for state register 'wbstate_reg' in module 'uart_wb'
+INFO: [Synth 8-802] inferred FSM for state register 'tstate_reg' in module 'uart_transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'uart_receiver'
+WARNING: [Synth 8-6040] Register nowXInShowRam_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'instate_reg' in module 'GraphicsController'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ps2_keyboard_driver'
+INFO: [Synth 8-802] inferred FSM for state register 'num_reg' in module 'ps2_keyboard_driver'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_bit_reg' in module 'ps2_keyboard_driver'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'wb_conmax_arb'
+WARNING: [Synth 8-327] inferring latch for variable 'reg2_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id.v:1051]
+WARNING: [Synth 8-327] inferring latch for variable 'reg1_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/id.v:1031]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg_read_addr_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:526]
+WARNING: [Synth 8-327] inferring latch for variable 'stallreq_for_madd_msub_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:402]
+WARNING: [Synth 8-327] inferring latch for variable 'hilo_temp_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:400]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:401]
+WARNING: [Synth 8-327] inferring latch for variable 'hilo_temp1_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ex.v:409]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_cause_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:147]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_data_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/mem.v:199]
+WARNING: [Synth 8-327] inferring latch for variable 'new_pc_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/ctrl.v:49]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'div'
+WARNING: [Synth 8-327] inferring latch for variable 'data_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/cp0_reg.v:324]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE1 |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wishbone_state_reg' using encoding 'sequential' in module 'wishbone_bus_if'
+WARNING: [Synth 8-327] inferring latch for variable 'cpu_data_o_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/OpenMIPS/wishbone_bus_if.v:124]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                           000001 |                              000
+                stpreset |                           000010 |                              001
+              stsenddata |                           000100 |                              010
+              stsetcmdwr |                           001000 |                              100
+              stsetcmdrd |                           010000 |                              011
+               stwaitcen |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cState_reg' using encoding 'one-hot' in module 'Ram2Ddr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                            00000
+                   START |                            00010 |                            00001
+                   WRITE |                            00100 |                            00010
+                    READ |                            01000 |                            00011
+                  ENDING |                            10000 |                            00101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'DDR2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wbstate_reg' using encoding 'one-hot' in module 'uart_wb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                              000 |                              000
+              s_pop_byte |                              001 |                              101
+            s_send_start |                              010 |                              001
+             s_send_byte |                              011 |                              010
+           s_send_parity |                              100 |                              011
+             s_send_stop |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tstate_reg' using encoding 'sequential' in module 'uart_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sr_idle |                             0000 |                             0000
+            sr_rec_start |                             0001 |                             0001
+          sr_rec_prepare |                             0010 |                             0110
+              sr_rec_bit |                             0011 |                             0010
+              sr_end_bit |                             0100 |                             0111
+           sr_rec_parity |                             0101 |                             0011
+         sr_ca_lc_parity |                             0110 |                             1000
+         sr_check_parity |                             0111 |                             0101
+                sr_wait1 |                             1000 |                             1001
+             sr_rec_stop |                             1001 |                             0100
+                 sr_push |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'uart_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+*
+                  iSTATE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'instate_reg' using encoding 'one-hot' in module 'GraphicsController'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'sm_bit_reg' in module 'ps2_keyboard_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+*
+                  iSTATE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ps2_keyboard_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                             0000 |                             0000
+                 iSTATE3 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE9 |                             0101 |                             0101
+                 iSTATE8 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE5 |                             1001 |                             1001
+                 iSTATE2 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'num_reg' using encoding 'sequential' in module 'ps2_keyboard_driver'
+WARNING: [Synth 8-327] inferring latch for variable 'ps2_asci_reg' [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/keyboard.v:259]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  grant0 |                              000 |                              000
+                  grant7 |                              001 |                              111
+                  grant6 |                              010 |                              110
+                  grant5 |                              011 |                              101
+                  grant4 |                              100 |                              100
+                  grant3 |                              101 |                              011
+                  grant2 |                              110 |                              010
+                  grant1 |                              111 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'wb_conmax_arb'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 4     
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 13    
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input      6 Bit         XORs := 5     
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
+	                8 Bit    Wide XORs := 1     
+	                7 Bit    Wide XORs := 1     
+	                6 Bit    Wide XORs := 1     
+	                5 Bit    Wide XORs := 1     
++---Registers : 
+	             1024 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 194   
+	               27 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 23    
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 21    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 17    
+	                3 Bit    Registers := 20    
+	                2 Bit    Registers := 22    
+	                1 Bit    Registers := 396   
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input 1024 Bit        Muxes := 3     
+	   6 Input 1024 Bit        Muxes := 2     
+	1024 Input 1024 Bit        Muxes := 2     
+	   2 Input   65 Bit        Muxes := 5     
+	   4 Input   65 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 10    
+	   3 Input   64 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 130   
+	   3 Input   32 Bit        Muxes := 12    
+	   7 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 9     
+	   5 Input   32 Bit        Muxes := 3     
+	  33 Input   32 Bit        Muxes := 3     
+	   9 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 3     
+	   8 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   8 Input   24 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 40    
+	   2 Input   19 Bit        Muxes := 36    
+	   2 Input   16 Bit        Muxes := 2     
+	   3 Input   16 Bit        Muxes := 1     
+	  15 Input   16 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 6     
+	  16 Input   11 Bit        Muxes := 1     
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   7 Input   10 Bit        Muxes := 1     
+	   8 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 52    
+	   4 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 1     
+	  33 Input    8 Bit        Muxes := 1     
+	  11 Input    8 Bit        Muxes := 4     
+	   9 Input    8 Bit        Muxes := 1     
+	  44 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	  27 Input    7 Bit        Muxes := 1     
+	  11 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 12    
+	   6 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 10    
+	   4 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 29    
+	   8 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 2     
+	  11 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 3     
+	   4 Input    5 Bit        Muxes := 3     
+	   7 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	  15 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 5     
+	   8 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 5     
+	  15 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 14    
+	  33 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 4     
+	   6 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 128   
+	   2 Input    3 Bit        Muxes := 42    
+	   6 Input    3 Bit        Muxes := 5     
+	  33 Input    3 Bit        Muxes := 6     
+	   8 Input    3 Bit        Muxes := 83    
+	   7 Input    3 Bit        Muxes := 1     
+	  27 Input    3 Bit        Muxes := 2     
+	  11 Input    3 Bit        Muxes := 2     
+	   9 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 18    
+	  57 Input    3 Bit        Muxes := 80    
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 45    
+	   7 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 4     
+	  15 Input    2 Bit        Muxes := 2     
+	  27 Input    2 Bit        Muxes := 2     
+	   8 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 539   
+	   3 Input    1 Bit        Muxes := 31    
+	   7 Input    1 Bit        Muxes := 653   
+	   4 Input    1 Bit        Muxes := 38    
+	  14 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 13    
+	   6 Input    1 Bit        Muxes := 15    
+	  15 Input    1 Bit        Muxes := 14    
+	   8 Input    1 Bit        Muxes := 89    
+	  33 Input    1 Bit        Muxes := 3     
+	  11 Input    1 Bit        Muxes := 16    
+	  28 Input    1 Bit        Muxes := 1     
+	  27 Input    1 Bit        Muxes := 1     
+	  44 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design openmips_min_sopc has port dtube_cs_n[7] driven by constant 1
+WARNING: [Synth 8-3917] design openmips_min_sopc has port dtube_cs_n[6] driven by constant 1
+WARNING: [Synth 8-3917] design openmips_min_sopc has port LED1 driven by constant 0
+WARNING: [Synth 8-3917] design openmips_min_sopc has port LED2 driven by constant 0
+INFO: [Synth 8-5544] ROM "status_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "status_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[0]' (FDRE) to 'cp0_reg0/config_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[0]' (FDRE) to 'cp0_reg0/config_o_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[0] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[1]' (FDRE) to 'cp0_reg0/config_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[1]' (FDSE) to 'cp0_reg0/config_o_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[2]' (FDRE) to 'cp0_reg0/config_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[2]' (FDRE) to 'cp0_reg0/config_o_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[2] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[3]' (FDRE) to 'cp0_reg0/config_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[3]' (FDRE) to 'cp0_reg0/config_o_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[3] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[4]' (FDRE) to 'cp0_reg0/config_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[4]' (FDRE) to 'cp0_reg0/config_o_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[4] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[5]' (FDRE) to 'cp0_reg0/config_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[5]' (FDRE) to 'cp0_reg0/config_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[5]' (FDRE) to 'cp0_reg0/config_o_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[5] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[5]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[6]' (FDRE) to 'cp0_reg0/config_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[6]' (FDRE) to 'cp0_reg0/config_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[6]' (FDRE) to 'cp0_reg0/config_o_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[6] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[6]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[7]' (FDRE) to 'cp0_reg0/config_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[7]' (FDRE) to 'cp0_reg0/config_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[7]' (FDRE) to 'cp0_reg0/config_o_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[7] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[7]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[8]' (FDRE) to 'cp0_reg0/config_o_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[8]' (FDSE) to 'cp0_reg0/config_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/EntryHi_o_reg[8]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[8]' (FDRE) to 'cp0_reg0/config_o_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[8] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[8]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[9]' (FDRE) to 'cp0_reg0/config_o_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[9]' (FDRE) to 'cp0_reg0/config_o_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/EntryHi_o_reg[9]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[9]' (FDRE) to 'cp0_reg0/config_o_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[9] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[9]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[10]' (FDRE) to 'cp0_reg0/config_o_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[10]' (FDRE) to 'cp0_reg0/config_o_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/EntryHi_o_reg[10]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[10]' (FDRE) to 'cp0_reg0/config_o_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[10] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[10]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[11]' (FDRE) to 'cp0_reg0/config_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[11]' (FDRE) to 'cp0_reg0/config_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/EntryHi_o_reg[11]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[11]' (FDRE) to 'cp0_reg0/config_o_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[11] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[11]' (FDCE) to 'cp0_reg0/EntryHi_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[12]' (FDRE) to 'cp0_reg0/config_o_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[12]' (FDRE) to 'cp0_reg0/config_o_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/EntryHi_o_reg[12]' (FDCE) to 'cp0_reg0/index_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[12]' (FDRE) to 'cp0_reg0/config_o_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[12] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[12]' (FDCE) to 'cp0_reg0/index_o_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[13]' (FDRE) to 'cp0_reg0/config_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[13]' (FDRE) to 'cp0_reg0/config_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[13]' (FDRE) to 'cp0_reg0/config_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[13]' (FDCE) to 'cp0_reg0/index_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[14]' (FDRE) to 'cp0_reg0/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[14]' (FDRE) to 'cp0_reg0/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[14]' (FDRE) to 'cp0_reg0/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[14]' (FDCE) to 'cp0_reg0/index_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[15]' (FDSE) to 'cp0_reg0/prid_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[15]' (FDRE) to 'cp0_reg0/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[15]' (FDRE) to 'cp0_reg0/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[15]' (FDCE) to 'cp0_reg0/index_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[16]' (FDRE) to 'cp0_reg0/config_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[16]' (FDRE) to 'cp0_reg0/config_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[16]' (FDRE) to 'cp0_reg0/config_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[16]' (FDCE) to 'cp0_reg0/index_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[17]' (FDRE) to 'cp0_reg0/config_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[17]' (FDRE) to 'cp0_reg0/config_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[17]' (FDRE) to 'cp0_reg0/config_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[17]' (FDCE) to 'cp0_reg0/index_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[18]' (FDRE) to 'cp0_reg0/config_o_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[18]' (FDSE) to 'cp0_reg0/prid_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[18]' (FDRE) to 'cp0_reg0/config_o_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[18]' (FDCE) to 'cp0_reg0/index_o_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[19]' (FDRE) to 'cp0_reg0/config_o_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[19]' (FDSE) to 'cp0_reg0/prid_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[19]' (FDRE) to 'cp0_reg0/config_o_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[19]' (FDCE) to 'cp0_reg0/index_o_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[20]' (FDRE) to 'cp0_reg0/config_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[20]' (FDRE) to 'cp0_reg0/config_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[20]' (FDRE) to 'cp0_reg0/config_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[20]' (FDCE) to 'cp0_reg0/index_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[21]' (FDRE) to 'cp0_reg0/config_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/prid_o_reg[21]' (FDRE) to 'cp0_reg0/config_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[21]' (FDRE) to 'cp0_reg0/config_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[21]' (FDCE) to 'cp0_reg0/index_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/config_o_reg[22]' (FDRE) to 'cp0_reg0/config_o_reg[23]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cp0_reg0/prid_o_reg[22] )
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/wired_o_reg[22]' (FDRE) to 'cp0_reg0/config_o_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cp0_reg0/index_o_reg[22]' (FDCE) to 'cp0_reg0/index_o_reg[23]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo1_o_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo0_o_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo1_o_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo0_o_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo1_o_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo0_o_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo1_o_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo0_o_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo1_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo0_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/index_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/PageMask_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo1_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/EntryLo0_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/cause_o_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cp0_reg0/cause_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\iwishbone_bus_if/wishbone_we_o_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\iwishbone_bus_if/wishbone_data_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[1][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[4][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[5][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[6][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[7][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[8][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[9][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[10][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[11][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[12][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[13][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[14][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[15][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[16][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[17][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[18][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[19][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[20][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[21][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[22][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[23][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[24][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[25][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[26][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[27][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[28][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[29][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[30][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tlb0/\TLB_PageMask_reg[31][31] )
+DSP Report: Generating DSP hilo_temp, operation Mode is: A*B.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: Generating DSP hilo_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: Generating DSP hilo_temp, operation Mode is: A*B.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: Generating DSP hilo_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[31]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[30]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[29]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[28]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[27]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[26]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[25]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[24]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[23]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[22]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[21]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[20]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[19]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[18]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[17]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[16]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[7]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[6]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[5]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[4]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[3]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[2]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[1]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (cp0_cause_reg[0]) is unused and will be removed from module mem.
+WARNING: [Synth 8-6040] Register nowXInShowRam_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[0]' (FD) to 'inputDataOuputShowRam_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[1]' (FD) to 'inputDataOuputShowRam_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[2]' (FD) to 'inputDataOuputShowRam_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[3]' (FD) to 'inputDataOuputShowRam_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[4]' (FD) to 'inputDataOuputShowRam_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[5]' (FD) to 'inputDataOuputShowRam_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inputDataOuputShowRam_reg[6]' (FD) to 'inputDataOuputShowRam_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inputDataOuputShowRam_reg[7] )
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[0]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[1]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[2]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[3]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[4]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[5]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_dat_o_reg[6]' (FD) to 'wb_dat_o_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wb_dat_o_reg[7] )
+WARNING: [Synth 8-3936] Found unconnected internal register 'nowYInShowRam_reg' and it is trimmed from '11' to '6' bits. [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/GraphicsController.v:169]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_reg[4] )
+INFO: [Synth 8-5544] ROM "regs/receiver/toc_value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/receiver/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/receiver/toc_value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/receiver/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/trigger_level" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ps2_asci" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_asci" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "temp_data0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_seg_" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\flash_rom/wrh_rdl_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DDR2/mem_a_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gpio_top0/sync_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ps2_keyboard_driver/count3_reg[16] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ps2_keyboard_driver/ps2_asci_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DDR2/Ram/mem_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m7/s15_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m6/s15_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m5/s15_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m4/s15_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m3/s15_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m2/s15_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ps2_keyboard_driver/wb_dat_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\flash_rom/wp_n_reg )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__1.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__1.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__1.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__2.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__2.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__2.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__3.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__3.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__3.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__4.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__4.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__4.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__5.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__5.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__5.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__6.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__6.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__6.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__7.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__8.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__9.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (arb/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb0/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb1/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[1]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb2/FSM_sequential_state_reg[0]) is unused and will be removed from module wb_conmax_slave_if__10.
+WARNING: [Synth 8-3332] Sequential element (msel/arb3/FSM_sequential_state_reg[2]) is unused and will be removed from module wb_conmax_slave_if__10.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:03:09 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+----------------+---------------+----------------+
+|Module Name        | RTL Object     | Depth x Width | Implemented As | 
++-------------------+----------------+---------------+----------------+
+|GraphicsController | screenlinebuf0 | 1024x1024     | LUT            | 
++-------------------+----------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------+--------------------------------------------------+-----------+----------------------+--------------+
+|Module Name            | RTL Object                                       | Inference | Size (Depth x Width) | Primitives   | 
++-----------------------+--------------------------------------------------+-----------+----------------------+--------------+
+|regfile1               | regs_reg                                         | Implied   | 32 x 32              | RAM32M x 12  | 
+|openmips_min_sopc__GC0 | uart_top0/regs/receiver/fifo_rx/rfifo/ram_reg    | Implied   | 16 x 8               | RAM32M x 2   | 
+|openmips_min_sopc__GC0 | uart_top0/regs/transmitter/fifo_tx/tfifo/ram_reg | Implied   | 16 x 8               | RAM32M x 2   | 
++-----------------------+--------------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ex          | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:54 ; elapsed = 00:03:17 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:59 ; elapsed = 00:03:22 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------+--------------------------------------------------+-----------+----------------------+--------------+
+|Module Name            | RTL Object                                       | Inference | Size (Depth x Width) | Primitives   | 
++-----------------------+--------------------------------------------------+-----------+----------------------+--------------+
+|regfile1               | regs_reg                                         | Implied   | 32 x 32              | RAM32M x 12  | 
+|openmips_min_sopc__GC0 | uart_top0/regs/receiver/fifo_rx/rfifo/ram_reg    | Implied   | 16 x 8               | RAM32M x 2   | 
+|openmips_min_sopc__GC0 | uart_top0/regs/transmitter/fifo_tx/tfifo/ram_reg | Implied   | 16 x 8               | RAM32M x 2   | 
++-----------------------+--------------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[10] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[10]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[9] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[9]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[8] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[8]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[7] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[7]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[6] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[6]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[5] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[5]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[4] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[4]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[3] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[3]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[2] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[2]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[1] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[1]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+INFO: [Synth 8-5966] Removing register instance (\flash_rom/read_count_reg[0] ) from module (openmips_min_sopc__GC0) as it has self-loop and (\flash_rom/read_count_reg[0]__0 ) is actual driver [D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/new/flash_rom.v:94]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:04 ; elapsed = 00:03:34 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin DDR2/p_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin DDR2/r_r_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:10 ; elapsed = 00:03:40 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:10 ; elapsed = 00:03:40 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:11 ; elapsed = 00:03:41 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:11 ; elapsed = 00:03:41 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:12 ; elapsed = 00:03:42 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:12 ; elapsed = 00:03:42 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ex          | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | PCIN>>17+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | PCIN>>17+A*B | 17     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |mig_7series_0 |         1|
+|3     |blk_mem_gen_1 |         1|
+|4     |blk_mem_gen_0 |         1|
+|5     |rom0          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     2|
+|3     |clk_wiz     |     1|
+|4     |mig_7series |     1|
+|5     |rom0        |     1|
+|6     |BUFG        |    11|
+|7     |CARRY4      |   305|
+|8     |DSP48E1     |     4|
+|9     |LUT1        |   256|
+|10    |LUT2        |  1884|
+|11    |LUT3        |   792|
+|12    |LUT4        |   923|
+|13    |LUT5        |  2228|
+|14    |LUT6        |  4621|
+|15    |MUXF7       |   426|
+|16    |MUXF8       |    70|
+|17    |RAM32M      |    12|
+|18    |RAM32X1D    |     8|
+|19    |STARTUPE2   |     1|
+|20    |FDCE        |  1227|
+|21    |FDPE        |    38|
+|22    |FDRE        |  5815|
+|23    |FDSE        |    18|
+|24    |LD          |    76|
+|25    |LDC         |   296|
+|26    |IBUF        |    22|
+|27    |OBUF        |    38|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:12 ; elapsed = 00:03:42 . Memory (MB): peak = 1709.582 ; gain = 425.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 343 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:53 ; elapsed = 00:03:33 . Memory (MB): peak = 1709.582 ; gain = 161.160
+Synthesis Optimization Complete : Time (s): cpu = 00:03:12 ; elapsed = 00:03:43 . Memory (MB): peak = 1709.582 ; gain = 425.238
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.262 . Memory (MB): peak = 1709.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1709.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 392 instances were transformed.
+  LD => LDCE: 76 instances
+  LDC => LDCE: 296 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
+
+Synth Design complete, checksum: af7d0f34
+INFO: [Common 17-83] Releasing license: Synthesis
+400 Infos, 293 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:18 ; elapsed = 00:03:50 . Memory (MB): peak = 1709.582 ; gain = 425.238
+INFO: [Common 17-1381] The checkpoint 'D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/openmips_min_sopc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file openmips_min_sopc_utilization_synth.rpt -pb openmips_min_sopc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 21:32:42 2023...
