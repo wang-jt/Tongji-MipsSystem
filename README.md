@@ -15,8 +15,8 @@
 
 **需注意：**
 
-1. μ-OS II系统**必须**在Ubuntu环境中编译，不要尝试将其迁移到Windows中开发
-2. 本项目没有经过重新git的流程验证，可能不能直接复现，有问题可参考Lingbai Kong的computer-system攻略[https://github.com/lingbai-kong/computer-system] 和文档附的实验报告。
+1. μ-OS II系统**必须**在Ubuntu环境中编译，**不要尝试**将其迁移到Windows中开发
+2. 本项目没有经过重新git的流程验证，可能不能直接复现，μ-OS II系统部分代码自查有缺失，有问题可参考Lingbai Kong的computer-system攻略[https://github.com/lingbai-kong/computer-system] 和文档附的实验报告。
 
 实验效果：
 
